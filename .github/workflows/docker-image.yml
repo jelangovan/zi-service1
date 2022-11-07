@@ -50,8 +50,8 @@ jobs:
           #docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           #echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
       
-      -name: restart tasks def
-       run: for taskarn in $(aws ecs list-tasks --cluster zoominfo-ecs-fargate --service zoominfo-service1 --desired-status RUNNING --output text --query 'taskArns'); do aws ecs stop-task --cluster zoominfo-ecs-fargate --task $taskarn; done;
+      - name: restart tasks def
+        run: for taskarn in $(aws ecs list-tasks --cluster zoominfo-ecs-fargate --service zoominfo-service1 --desired-status RUNNING --output text --query 'taskArns'); do aws ecs stop-task --cluster zoominfo-ecs-fargate --task $taskarn; done;
           
         
           
