@@ -32,7 +32,7 @@ def service2_url():
     """Base url to test API."""
 
     response = {
-        'response': 'Hello world! from <h1>public alb !!!</h1> '
+        'response': 'Hello world! from <h1> Elango public alb !!!</h1> '
     }
 
     return 'Hello world! from <h1> public ALB</h1> '
