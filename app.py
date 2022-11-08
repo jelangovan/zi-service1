@@ -31,7 +31,7 @@ def base_url():
 def service2_url():
     """Base url to test API."""
 
-    return <h2>'Hello world! from <h1>  Elango  public ALB </h1> </h2>'
+    return '<h2>Hello world! from <h1>  Elango  public ALB </h1> </h2>'
 
 #@app.route('/google')
 #def hello():
